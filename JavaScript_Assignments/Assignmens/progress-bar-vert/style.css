@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.progress-bar-container{
+    margin-inline: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator{
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.progress-bar-wrapper{
+    border-radius: 30px;
+    box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+    flex-grow: 1;
+    position: relative;
+}
+
+.progress-bar{
+    border-radius: 30px;
+    position: absolute;
+    left: -8px;
+    width: 15px;
+    height: 100%;
+    background-color: green;
+}

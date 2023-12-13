@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   
+</head>
+<body>
+    <script>
+        // This program prompts the user to enter positive numbers until they enter 0 and then calculates the sum of the entered numbers.
+        
+        let userInput = parseInt(prompt("Enter number: (type 0 to finish)"));
+        let sum = 0;
+
+        while (userInput !== 0) {
+        sum += userInput;
+        userInput = parseInt(prompt("Enter number: (type 0 to finish)"));
+        }
+
+        console.log("The sum of the numbers you entered is: " + sum);
+    </script>
+</body>
+</html>

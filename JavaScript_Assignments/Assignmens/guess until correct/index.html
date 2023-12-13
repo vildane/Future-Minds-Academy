@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const randomNum = Math.floor(Math.random() * 6) + 1;
+        let number;
+        let count = 0;
+        do{
+            number = parseInt(prompt('Guess the number!'));
+            count++;
+        }while(number != randomNum);
+
+        let plurality = 'tries'
+        if(count == 1){
+            plurality = 'try';
+        }
+
+        console.log(`Congratulations, you guessed the correct number in ${count} ${plurality}`)
+    </script>
+</body>
+</html>

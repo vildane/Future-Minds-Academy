@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1 = parseInt(prompt('Write the number:'));
+        let number2 = parseInt(prompt('Write the second number:'));
+        let operator = prompt('write the operator in words:').toLowerCase().trim();
+
+        if (isNaN(number1) || isNaN(number2)) {
+            throw new Error('Please write a valid numbers!');
+        }
+        else {
+            let results;
+
+            switch (operator) {
+                case 'addition':
+                    results = number1 + number2;
+                    break;
+                case 'subtraction':
+                    results = number1 - number2;
+                    break;
+                case 'multiplication':
+                    results = number1 * number2;
+                    break;
+                case 'division':
+                    if (number2 != 0) {
+                        results = number1 / number2;
+                    }else { 
+                        throw new Error('Can\'t divide by zero!');
+                }
+                    
+                    break;
+                case 'modulus':
+                    results = number1 % number2;
+                    break;
+                default:
+                results= "Invalid operator";
+            }
+
+            console.log('The results: ' + results);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function that prints "Hello World" ten times in the console
+        function hello(){
+            for(let i=0; i<10; i++ ){
+                console.log('Hello World')
+            }
+        }
+        hello();
+
+        //Create a function that accepts a string parameter and simply prints it to the console
+
+        function exercises(string){
+            console.log('String Parameter');
+        }
+        exercises();
+
+        //Create a function that accepts the number of kilometers as a parameter, converts the kilometers into miles, and returns the miles as a number
+        function KilometersMiles(kilometers){
+            const miles = kilometers * 0.621371;
+            return miles;
+        }
+
+        const miles = KilometersMiles(10);
+        console.log(`10 kilometers is ${miles} miles.`);
+
+        //Create a function that accepts the radius of a circle as a parameter and returns its area
+        let radius = parseInt(prompt('enter the radius circle'));
+     
+        function carea(radius){
+            return radius * radius * Math.PI
+        }   
+        console.log(`area of the circle with radius is ${radius}`);
+
+        //Create a function that accepts the users name and surname and then returns a string of the form "Welcome, {name} {surname}"
+       
+
+        function greet(name, surname) {
+            console.log(`Welcome, ${name} ${surname}`);
+        }
+        greet('Vildane' , 'Aliu');
+
+        //Create a function called isWorkingCitizen which accepts the age of the user as an input and returns true or false whether the user is a working citizen or not. Remember that a working citizen is 18 years or older but younger than 65
+
+
+        function isWorkingCitizen(age) {
+            return age >= 18 && age < 65;
+        }
+        let age = parseInt(prompt('enter age'));
+        console.log(`Is the person a working citizen? ${isWorkingCitizen(age)}`);
+
+        //Create a function called isEven which accepts a positive integer and ouputs true or false whether the number provided is even or not
+
+        function isEven(number){
+            return number %2 === 0;
+
+        }
+         let number = 5;
+         console.log(`Is ${number} an even number? It is ${isEven(number)}`);
+        
+    </script>
+</body>
+</html>
